@@ -1,0 +1,24 @@
+---
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import "../styles/global.css";
+
+// Permite pasar el título de la página por props
+const { title } = Astro.props;
+---
+
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>{title} | Espacio Cultural</title>
+    </head>
+    <body>
+        <Header />
+        <main>
+            <!-- Aquí se inyectará el contenido de las páginas -->
+            <slot />
+        </main>
+        <Footer />
+    </body>
+</html>

@@ -1,0 +1,34 @@
+---
+import Layout from "../layouts/Layout.astro";
+import TarjetaTaller from "../components/TarjetaTaller.astro";
+---
+
+<Layout title="Inicio">
+	<section class="hero">
+		<h1>Bienvenido a Espacio-Cultural</h1>
+		<p>
+			Somos un punto de encuentro dedicado a la difusión del arte, la
+			cultura y el aprendizaje continuo en nuestra comunidad. Descubre lo
+			que tenemos para ti.
+		</p>
+	</section>
+
+	<section class="destacados">
+		<h2>Nuestros Talleres Destacados</h2>
+		<div class="grid-talleres">
+			<!-- Reutilizando TarjetaTaller con info diferente -->
+			<TarjetaTaller
+				title="Pintura al Óleo"
+				description="Aprende técnicas clásicas y contemporáneas para expresar tus emociones sobre el lienzo."
+			/>
+			<TarjetaTaller
+				title="Teatro Inclusivo"
+				description="Desarrolla habilidades de expresión corporal y pierde el miedo escénico en un ambiente seguro."
+			/>
+			<TarjetaTaller
+				title="Fotografía Urbana"
+				description="Recorre la ciudad y aprende a capturar su esencia con tu cámara fotográfica o smartphone."
+			/>
+		</div>
+	</section>
+</Layout>

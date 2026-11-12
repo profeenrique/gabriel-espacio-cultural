@@ -1,0 +1,29 @@
+---
+import Layout from '../layouts/Layout.astro';
+import TarjetaTaller from '../components/TarjetaTaller.astro';
+---
+
+<Layout title="Talleres">
+  <h1>Catálogo de Talleres</h1>
+  <p>Explora la variedad de talleres que ofrecemos. Contamos con opciones para todas las edades y niveles de experiencia, guiados por expertos apasionados.</p>
+
+  <div class="grid-talleres">
+    <!-- Reutilizando TarjetaTaller con info diferente a la de inicio -->
+    <TarjetaTaller 
+      title="Pintura al Óleo" 
+      description="Aprende técnicas clásicas y contemporáneas para expresar tus emociones sobre el lienzo." 
+    />
+    <TarjetaTaller 
+      title="Teatro Inclusivo" 
+      description="Desarrolla habilidades de expresión corporal y pierde el miedo escénico en un ambiente seguro." 
+    />
+    <TarjetaTaller 
+      title="Fotografía Urbana" 
+      description="Recorre la ciudad y aprende a capturar su esencia con tu cámara fotográfica o smartphone." 
+    />
+    <TarjetaTaller 
+      title="Escritura Creativa" 
+      description="Desbloquea tu imaginación y aprende a estructurar cuentos, poemas y narrativas cautivadoras." 
+    />
+  </div>
+</Layout>
